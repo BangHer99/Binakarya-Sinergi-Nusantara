@@ -317,6 +317,42 @@ body {
   }
   
   
+.container-line-of-business{
+  padding-top: 80px;
+  /* border: #0000ff 5px solid; */
+  padding-bottom: 80px;
+  background: url(Bg-homes-services.png);
+}
+.container-line-of-business h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: #000 2px 2px 2px;
+}
+
+.line{
+  border: #434a89be 5px solid;
+  /* background-color: #53a3ff; */
+  padding-left: 20px;
+}
+.line-of-business {
+  padding-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+  /* color: #000;
+  border: #000 5px solid; */
+  background-color: #ffffff96;
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  /* text-align: justify; */
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.line p {
+  font-size: 25px;
+}
   
   
 .layanan {
@@ -379,6 +415,23 @@ body {
   .desc-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 860px){
+  .line-of-business {
+    /* padding-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px; */
+    /* color: #000;
+    border: #000 5px solid; */
+    background-color: #ffffff96;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    /* text-align: justify; */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
   }
 }
 
