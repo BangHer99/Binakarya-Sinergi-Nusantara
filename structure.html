@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Logo-BSN-removebg-preview.png">
+  <title>Struktur Organisasi</title>
+  <link rel="stylesheet" href="structure.css">
+  <script src="https://kit.fontawesome.com/30e18e6c5b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+  <header>
+    <div class="containers">
+        <div class="pojok">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        </div>
+    </div>
+</header>
+
+
+<div class="homes">
+  <div class="respon-logo">
+    <div class="logo-hp">
+        <img src="Logo-BSN-removebg-preview.png" width="160px">
+    </div>
+   </div>
+    <div class="container">
+        <div class="hidden-element"></div>
+        <div class="logo"><img src="Logo-BSN-removebg-preview.png" width="160px"></div>
+        <nav class="navbar">
+            <div class="content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="why-bsn.html">Why BSN ?</a></li>
+                <li><a href="structure.html">Teams</a></li>
+                <!-- <li><a href="#">About</a></li> -->
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="why-bsn.html">Why BSN ?</a></li>
+                <li><a href="index.html#visi&misi">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="structure.html">Teams</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="container-structure" >
+  <div class="org-chart">
+    <ul>
+      <li>
+        <div class="person" data-aos="slide-up" data-aos-duration="2500">
+          <img src="manager1.png" alt="CEO">
+          <span class="name">(Komisaris)</span>
+                            <P>AINUL GHURRI</P>
+        </div>
+        <ul>
+          <li>
+            <div class="person" data-aos="slide-up" data-aos-duration="2500">
+              <img src="manager1.png" alt="Manager 1">
+              <span class="name">(Direktur Utama)</span>
+                              <P>JENDRAL KHALID MAULANA</P>
+            </div>
+            <ul>
+              <li>
+                <div class="person" data-aos="slide-up" data-aos-duration="2500">
+                  <img src="manager1.png" alt="Employee 1">
+                  <span class="name">(Direktur Operasional)</span>
+                                  <P>MUHAMMAD IRHAM WIDYANANDA</P>
+                </div>
+              </li>
+              <li>
+                <div class="person" data-aos="slide-up" data-aos-duration="2500">
+                  <img src="manager1.png" alt="Employee 2">
+                  <span class="name">(Direktur Pengembangan Bisnis)</span>
+                                    <P>DAFFA ISLAMEY SUBAGJA</P>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+  <footer class="contact" id="contacts">
+    <div class="container-container">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div class="info">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Perum Puri Pamulang, Jl. Palem Blok C2, Nomor 9,
+            Kelurahan Pamulang Barat, Kecamatan Pamulang,<br>
+            Kota Tangerang Selatan, Provinsi Banten</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-phone"></i>
+          <p>+62816 735 833</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-envelope"></i>
+          <p>binakaryasinerginusantara@gmail.com</p>
+        </div>
+      </div>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <!-- <button type="submit">Send</button> -->
+      </form>
+      <button type="submit">Send</button>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
