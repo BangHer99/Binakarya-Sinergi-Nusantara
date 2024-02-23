@@ -23,8 +23,8 @@ body {
     align-items: center;
     padding: 10px;
     color: #fff;
-    margin-left: 200px;
-    /* margin-left: 35vh; */
+/*     margin-left: 200px; */
+    margin-left: 40vh;
     z-index: 999;
     
 }
