@@ -428,6 +428,9 @@ body {
   font-size: 20px;
 
 }
+.services-img p {
+  font-size: 18px;
+}
 .desc {
     padding-top: 20px;
     padding-bottom: 50px;
