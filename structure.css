@@ -4,7 +4,12 @@ body {
 }
 
 /* INI NAVBAR */
+.homes {
+  padding-bottom: 200px;
+  background:url(Banner-Structure.png);
+  background-size: cover;
 
+}
 .container {
   display: flex;
   position: fixed;
@@ -13,7 +18,7 @@ body {
   align-items: center;
   padding: 10px;
   color: #fff;
-  margin-left: 25vh;
+  margin-left: 40vh;
   z-index: 999;
   
 }
@@ -22,57 +27,74 @@ body {
   display: none;
 }
 
+
 .containers {
-  display: flex;
-  justify-content: end;
-  /* justify-content: center; */
-  align-items: center;
-  padding: 10px;
-  background-color:transparent;
-  color: #fff;
-  display: none;
+display: flex;
+justify-content: end;
+z-index: 99999;
+align-items: center;
+padding: 10px;
+background-color:transparent;
+color: #fff;
+display: none;
 }
 .containers .pojok {
-  margin-top: 10px;
-  position: fixed;
+margin-top: 10px;
+position: fixed;
 }
 .logo{
-  position: absolute;
-  left: 3em;
+position: absolute;
+left: 3em;
 }
 
 .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  /* padding-top: 100px; */
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
 }
 .navbar {
-  margin-top: 10px;
-  background-color: #1E2454;
-  margin-right: 0px;
-  border-radius: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 200px;
-  padding-right: 200px;
-  border: #BDB76B 5px solid;
+
+
+position: fixed; /* Navbar menjadi tetap berada di atas */
+top: 0; /* Memastikan navbar tetap di bagian atas */
+width: 80%; /* Lebar navbar mengisi seluruh lebar layar */
+background-color: #1E2454;
+border-radius: 20px;
+padding-top: 40px;
+padding-bottom: 40px;
+padding-left: 10px;
+padding-right: 10px;
+border: #BDB76B 5px solid;
+display: flex;
+margin-top: 10px;
+margin-left: 115px;
+justify-content: center;
+align-items: center;
+z-index: 999; /* Memastikan navbar muncul di atas konten lain */
+
+
 
 }
 
 .navbar ul li {
-  display: inline;
+display: inline-block;
+margin-right: 20px; /* Jarak antar elemen menu */
 }
-
+.content img{
+  display: inline-block;
+  position: absolute;
+  left: -15px;
+  top: -70px;
+  bottom: 1000px;
+}
 .navbar ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+padding: 10px;
+transition: all 0.3s ease; /* Animasi transisi */
 }
-
 .navbar ul li a:hover{
   background: #FF9900;
   transition: .5s;
@@ -94,7 +116,7 @@ a:hover,a.active{
   width: 250px;
   z-index: 9999;
   height: 100%;
-  background-color: #070302;
+  background-color: #1E2454;
 
   transition: 0.5s;
 }
@@ -122,29 +144,19 @@ a:hover,a.active{
   color: #fff;
   cursor: pointer;
 }
-.homes {
-  padding-bottom: 200px;
-  /* z-index: 99999; */
-  background:url(Banner-Structure.png);
-  background-size: cover;
 
-}
 @media screen and (max-width: 1660px){
   .container {
       padding-left: 20vh;
   }
-  .logo {
-      left: 200px;
-  }
+ 
 }
 
 @media screen and (max-width: 1509px){
   .container {
      padding-left: 8vh;
   }
-  .logo {
-      left: 100px;
-  }
+  
 }
 
 @media (max-width: 1363px){
@@ -163,24 +175,7 @@ a:hover,a.active{
       padding-left: 2vh;
       /* margin-left: 230px; */
   }
-  .logo {
-      left: 50px;
-  }
-  .navbar {
-      margin-top: 10px;
-      /* background-color: hsla(210, 51%, 61%, 0.7); */
-      /* background-color: rgb(79, 154, 252); */
-      margin-right: 0px;
-      /* margin-left: 100px; */
-      border-radius: 20px;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      padding-left: 200px;
-      padding-right: 150px;
-      /* border: #000 5px solid; */
   
-  
-  }
 }
 
 @media (max-width: 1050px){
@@ -191,24 +186,7 @@ a:hover,a.active{
       padding-left: 2vh;
       /* margin-left: 230px; */
   }
-  .logo {
-      left: 50px;
-  }
-  .navbar {
-      margin-top: 10px;
-      /* background-color: hsla(210, 51%, 61%, 0.7); */
-      /* background-color: rgb(79, 154, 252); */
-      margin-right: 0px;
-      /* margin-left: 100px; */
-      border-radius: 20px;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      padding-left: 150px;
-      padding-right: 150px;
-      /* border: #000 5px solid; */
   
-  
-  }
 }
 
 
