@@ -314,8 +314,11 @@ a:hover,a.active{
   }
   .org-chart{
     border: #fff 5px solid;
-    margin: 100px;
+    /* margin: 100px; */
     background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    text-align: center;
   }
   .org-chart li {
     list-style-type: none;
@@ -324,30 +327,36 @@ a:hover,a.active{
   }
   
 
-  .person {
+  .jabatan {
     display: inline-block;
     margin: 10px;
+    padding-top: 50px;
   }
   
-  .person img {
+  .jabatan img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 2px solid #000;
   }
-  
+  .manajemen{
+    background-color: white;
+    text-align: center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
   .name {
     display: block;
     margin-top: 5px;
   }
   
-  .person:hover img {
+  .jabatan:hover img {
     animation: pulse 0.5s infinite alternate;
   }
   .name {
     font-weight: 700;
   }
-  .person p{
+  .jabatan p{
     font-weight: 800;
   }
   @keyframes pulse {
